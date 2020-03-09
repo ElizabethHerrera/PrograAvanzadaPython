@@ -10,14 +10,14 @@ def calcularia(valor):
 		return valorvariable
 	else:
 		return valorfijo
-		
+
 # definicion de variables
 _aportacion = ""
 aportacion=0.00
 minimo= 500.00
 
-# ciclo infinito, que finaliza una vez que 
-# se ha introducido un valor numerico y que sea mayor a 500
+# ciclo infinito, que finaliza una vez que
+# se ha introducido un valor nu15merico y que sea mayor a 500
 while True:
 	_aportacion=input("Aportacion: ")
     # validacion sobre si es un valor numerico
@@ -31,6 +31,6 @@ while True:
 	else:
 		print("se requiere una cantidad")
 
-# Se imprimen los valores dados por la funcion 'calcularia()' con formato monetario.	
+# Se imprimen los valores dados por la funcion 'calcularia()' con formato monetario.
 txt= "Aportacion al artista ${:,.2f}"
 print(txt.format(calcularia(aportacion)))
